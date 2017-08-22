@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bounty Game</title>
+
+<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+	<!-- Container -->
+	<div class="Container">
+
+	<!-- jumbotron -->
+	<div class="jumbotron">
+		<div class="container">
+		  <h1 class="text-center">Bounty Credit Collector Game</h1>
+		  	<p class="text-center">Collect the right amount of Bounty Credits to win the round!</p>
+		</div>
+	</div>
+
+	<!-- Istruction panel -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel panel-heading"> Instructions:</div>
+					<div class="panel panel-body"> "You will be given a random number of Bounty Credits to collect. Each round the target number will change. Click one of the four Bounties to collect them. Each Bounty is assigned a random value at the begining of each round. Try to guess the correct order to click the Bounties in to win! Good luck! "</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- target score -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+					<div class="panel panel-heading">
+						<h3 class="panel-title text-center">Target Bounty Score:</h3>
+					</div>
+						<div class="panel panel-body">
+							<h3 id="targetScore"></h3>
+						</div>
+				</div>
+			</div>
+
+	<!-- your score -->
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+					<div class="panel panel-heading">
+						<h3 class="panel-title text-center">Your Bounty Score:</h3>
+					</div>
+						<div class="panel panel-body">
+							<h3 id="yourScore"></h3>
+						</div>
+				</div>
+			</div>
+
+	<!-- Bounties -->
+			<div class="col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel panel-heading">
+						<h3 class="panel-title text-center">Bounty Options:</h3>
+					</div>
+						<div class="panel panel-body text-center">
+						<img src="./assets/images/BobaFett.png" class="img-thumbnail" id="boba">
+						<img src="./assets/images/stormtrooper.png" class="img-thumbnail" id="stormTrooper">
+						<img src="./assets/images/DarthVader.png" class="img-thumbnail" id="darth">
+						<img src="./assets/images/JangoFett.png" class="img-thumbnail" id="jango">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- wins -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Wins:</h3>
+					</div>
+						<div class="panel-body"><h3 id="winCount"></h3></div>
+				</div>
+			</div>
+
+	<!-- losses -->
+			<div class="col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Losses:</h3>
+					</div>
+						<div class="panel-body"><h3 id="lossCount"></h3></div>
+				</div>
+			</div>
+		</div>
+
+
+
+	<!-- end container -->
+	</div>
+
+		<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- js gem game file -->
+	<script type="text/javascript" src="./assets/js/gemGame.js"></script>
+</body>
+</html>
